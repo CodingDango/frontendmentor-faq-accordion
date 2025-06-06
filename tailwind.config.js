@@ -1,23 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*.html'],
+  content: [
+    "./src/**/*.html", // This will find index.html inside src
+    "./src/**/*.js",   // If you have JS files in src using Tailwind classes
+  ],
   theme: {
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px'
-    },
     extend: {
       colors: {
-        brightRed: 'hsl(12, 88%, 59%)',
-        brightRedLight: 'hsl(12, 88%, 69%)',
-        brightRedSupLight: 'hsl(12, 88%, 95%)',
-        darkBlue: 'hsl(228, 39%, 23%)',
-        darkGrayishBlue: 'hsl(227, 12%, 61%)',
-        veryDarkBlue: 'hsl(233, 12%, 13%)',
-        veryPaleRed: 'hsl(13, 100%, 96%)',
-        veryLightGray: 'hsl(0, 0%, 98%)',
+        'white': 'hsl(0, 100%, 100%)',
+        'purple-100': 'hsl(275, 100%, 97%)',
+        'purple-600': 'hsl(292, 16%, 49%)',
+        'purple-700': 'hsl(292, 65.50%, 38.60%)',
+        'purple-bright': 'hsl(270, 100.00%, 79.60%)'
       }
     },
   },
