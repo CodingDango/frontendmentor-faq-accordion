@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.html", // This will find index.html inside src
-    "./src/**/*.js",   // If you have JS files in src using Tailwind classes
+    "./docs/**/*.html", // This will find index.html inside src
+    "./docs/**/*.js",   // If you have JS files in src using Tailwind classes
   ],
   theme: {
     extend: {
